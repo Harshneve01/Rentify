@@ -1,4 +1,4 @@
-# 🏠 Rentify – Full-Stack Rental Property Platform (Like Airbnb)
+# 🏠 Rentify – Full-Stack Rental Property Platform
 
 Rentify is a full-stack web application inspired by Airbnb. It allows users to browse and book rental properties, and lets hosts list their properties for rent. This project is built using **React.js** on the frontend and **Spring Boot (Java)** on the backend, with **MySQL** as the database.
 
