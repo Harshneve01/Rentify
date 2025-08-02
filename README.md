@@ -1,39 +1,12 @@
-# Rentify – Full-Stack Rental Property Platform
+# React + Vite
 
-Rentify is a full-stack web application inspired by Airbnb. It allows users to browse and book rental properties, and lets hosts list their properties for rent. This project is built using **React.js** on the frontend and **Spring Boot (Java)** on the backend, with **MySQL** as the database.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-##  Key Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-###  User Side:
-- View all available properties
-- Book rental listings
-- View property details
+## Expanding the ESLint configuration
 
-###  Host Side:
-- Add new properties
-- View listed properties
-- Manage bookings (future enhancement)
-
----
-
-##  Tech Stack
-
-| Layer       | Technology                |
-|-------------|----------------------------|
-| Frontend    | React, Axios, HTML, CSS    |
-| Backend     | Spring Boot, Spring Data JPA |
-| Database    | MySQL                      |
-| Build Tools | Maven, npm                 |
-
----
-
-##  How to Run the Project Locally
-
-###  Backend (Spring Boot)
-1. Create a MySQL database named `rentify`
-2. Update DB credentials in `application.properties`
-3. Run the backend:
-   ```bash
-   mvn spring-boot:run
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
