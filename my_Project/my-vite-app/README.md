@@ -1,51 +1,49 @@
-# React + Vite
+# 🏠 Rentify – Full-Stack Rental Property Platform (Like Airbnb)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://sw# Rentify – Full-Stack Rental Property Platform
-
-**Rentify** is a full-stack web application inspired by Airbnb. It allows users to browse, list, and book rental properties. The platform is designed for both property owners and renters.
+**Rentify** is a full-stack web application inspired by Airbnb. It allows users to browse and book rental properties, and enables hosts to list and manage their properties. The project is developed using **React** (frontend), **Spring Boot** (backend), and **MySQL** (database).
 
 ---
 
-## 🌐 Live Demo
-[Add live demo link here if hosted]
+## 📌 Features
+
+### 👤 Users
+- Register and login
+- Browse all available properties
+- View property details
+- Book a rental property
+
+### 🏠 Hosts
+- Register and login
+- Add property listings
+- View/manage listed properties
+- View bookings (upcoming feature)
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend:**  
-- React.js (Vite)
-- HTML, CSS
-
-**Backend:**  
-- Java Spring Boot  
-- RESTful APIs
-
-**Database:**  
-- MySQL
-
-**Tools & Others:**  
-- Git & GitHub  
-- Postman for API testing  
-- VS Code
+| Layer        | Technology                  |
+|--------------|------------------------------|
+| Frontend     | React.js, Axios, HTML, CSS   |
+| Backend      | Spring Boot, Spring Data JPA |
+| Database     | MySQL                        |
+| Build Tools  | Maven, npm                   |
 
 ---
 
-## ✨ Features
+## 🚀 Getting Started
 
-- 🔐 User Registration & Login
-- 🏠 Property Listing & Management
-- 🔎 Browse Available Rentals
-- 📅 Booking System
-- 📬 Contact or Message Property Owners
-- 🧾 Admin Panel (Optional)
+### 🧰 Prerequisites
+
+- Node.js & npm
+- Java 17+
+- Maven
+- MySQL Server
 
 ---
 
-## 📂 Folder Structure (React Frontend)
+### 🔧 Backend Setup (`rentify-backend`)
 
+1. Create a MySQL database:
+   ```sql
+   CREATE DATABASE rentify;
