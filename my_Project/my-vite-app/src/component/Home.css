@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .home-bg {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+}
+
+.home-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.13);
+  padding: 28px 5vw;
+  backdrop-filter: blur(12px);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 35px rgba(0,0,0,0.10);
+  color: #fff;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.home-header nav a {
+  margin-left: 28px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.home-header nav a.login-btn {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 8px 18px;
+  background: linear-gradient(to right, #b721ff, #21d4fd);
+}
+
+.home-header nav a:hover {
+  color: #b721ff;
+  text-decoration: underline;
+}
+
+.hero-section {
+  text-align: center;
+  margin: 60px 0 30px 0;
+  color: #fff;
+  padding: 40px 10vw;
+  background: rgba(255,255,255,0.18);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 38px rgba(0,0,0,0.15);
+}
+
+.hero-section h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-section p {
+  font-size: 1.35rem;
+  margin-bottom: 26px;
+  color: #eee;
+}
+
+.hero-section button {
+  padding: 13px 36px;
+  background: linear-gradient(to right, #b721ff, #21d4fd);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(183,33,255,0.15);
+  transition: transform 0.18s;
+}
+
+.hero-section button:hover {
+  transform: scale(1.04);
+}
+
+.featured-listings {
+  width: 94vw;
+  max-width: 1180px;
+  margin: 38px auto 0 auto;
+  color: #fff;
+  padding-bottom: 35px;
+}
+
+.featured-listings h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.listing-cards {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.listing-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 308px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+  transition: transform 0.22s;
+  margin-bottom: 14px;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.listing-card img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255,255,255,0.19);
+}
+
+.listing-info {
+  padding: 18px 15px;
+  color: #fff;
+}
+
+.listing-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.listing-info p {
+  font-size: 1rem;
+  opacity: 0.84;
+  margin-bottom: 7px;
+}
+
+.listing-info .price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fa71cd;
+}
+
+.home-footer {
+  margin-top: auto;
+  background: rgba(0,0,0,0.13);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.07);
+}
