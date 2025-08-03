@@ -1,40 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Register.css';
 
-const Register = () => {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    contact: '',
-    password: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ 
-      ...formData, 
-      [e.target.name]: e.target.value 
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Registered:\n${formData.username} \n${formData.email}`);
-  };
-
+function Register() {
   return (
-    <div className="register-wrapper">
-      <div className="register-card glass">
-        <h2 className="register-title">Create Account</h2>
-        <form className="register-form" onSubmit={handleSubmit}>
-          <input type="text" name="username" placeholder="Username" required onChange={handleChange} />
-          <input type="email" name="email" placeholder="Email Address" required onChange={handleChange} />
-          <input type="tel" name="contact" placeholder="Contact Number" required onChange={handleChange} />
-          <input type="password" name="password" placeholder="Password" required onChange={handleChange} />
-          <button type="submit">Sign Up</button>
-        </form>
-      </div>
+    <div className="register-container">
+      <h2>Create Your Account</h2>
+
+      <form>
+        <div className="input-group">
+          <i className="fas fa-user"></i>
+          <input type="text" placeholder="Full Name" required />
+        </div>
+
+        <div className="input-group">
+          <i className="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <div className="input-group">
+          <i className="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required />
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p className="login-link">
+        Already have an account? <a href="#">Login</a>
+      </p>
     </div>
   );
-};
+}
 
 export default Register;
