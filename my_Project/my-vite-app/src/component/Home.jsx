@@ -22,6 +22,55 @@ const listings = [
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
     location: "Bali, Indonesia",
     price: "$200/night"
+  },
+  {
+    id: 4,
+    title: "Modern Apartment, New York",
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80",
+    location: "New York, USA",
+    price: "$210/night"
+  },
+  {
+    id: 5,
+    title: "Luxury Villa, Santorini",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
+    location: "Santorini, Greece",
+    price: "$400/night"
+  },
+  {
+    id: 6,
+    title: "Cabin in the Woods",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80",
+    location: "Oregon, USA",
+    price: "$80/night"
+  },
+  {
+    id: 7,
+    title: "Scandinavian Loft",
+    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+    location: "Stockholm, Sweden",
+    price: "$170/night"
+  },
+  {
+    id: 8,
+    title: "City Loft, London",
+    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80",
+    location: "London, UK",
+    price: "$195/night"
+  },
+  {
+    id: 9,
+    title: "Coastal Retreat, California",
+    image: "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&w=400&q=80",
+    location: "California, USA",
+    price: "$230/night"
+  },
+  {
+    id: 10,
+    title: "Mountain Chalet, Switzerland",
+    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80",
+    location: "Zermatt, Switzerland",
+    price: "$320/night"
   }
 ];
 
