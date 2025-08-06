@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import sampleImage from '../Image/Rentify.png';
 
 const listings = [
   {
@@ -78,7 +79,10 @@ function Home() {
   return (
     <div className="home-bg">
       <header className="home-header">
-        <div className="logo">StayBnB</div>
+        <div className="logo">
+        
+          <span>Rentify</span>
+        </div>
         <nav>
           <a href="/">Home</a>
           <a href="/listings">Listings</a>
@@ -96,7 +100,7 @@ function Home() {
       <section className="featured-listings">
         <h2>Featured Listings</h2>
         <div className="listing-cards">
-          {listings.map(listing => (
+          {listings.map((listing) => (
             <div key={listing.id} className="listing-card">
               <img src={listing.image} alt={listing.title} />
               <div className="listing-info">
@@ -110,7 +114,7 @@ function Home() {
       </section>
 
       <footer className="home-footer">
-        <span>&copy; 2025 StayBnB. All rights reserved.</span>
+        <span>&copy; 2025 Rentify. All rights reserved.</span>
       </footer>
     </div>
   );
