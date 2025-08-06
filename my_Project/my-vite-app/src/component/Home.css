@@ -1,181 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
+/* -------------------- GLOBAL RESET -------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html, .home-bg {
+html, body, #root {
   height: 100%;
   width: 100%;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #764ba2;
 }
 
+/* -------------------- PAGE WRAPPER -------------------- */
 .home-bg {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
+/* -------------------- HEADER -------------------- */
 .home-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255,255,255,0.13);
-  padding: 28px 5vw;
-  backdrop-filter: blur(12px);
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 8px 35px rgba(0,0,0,0.10);
-  color: #fff;
-  z-index: 2;
+  padding: 20px 40px;
+  background-color: #764ba2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1200;
 }
+
 
 .logo {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
 }
 
-.home-header nav a {
-  margin-left: 28px;
-  color: #fff;
-  font-weight: 600;
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px;
   text-decoration: none;
-  font-size: 1rem;
-  position: relative;
+  color: #ffffff;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-.home-header nav a.login-btn {
-  border: 1px solid #fff;
-  border-radius: 8px;
-  padding: 8px 18px;
-  background: linear-gradient(to right, #b721ff, #21d4fd);
+nav a:hover {
+  color: #00c2ff;
 }
 
-.home-header nav a:hover {
-  color: #b721ff;
-  text-decoration: underline;
-}
-
-.hero-section {
-  text-align: center;
-  margin: 60px 0 30px 0;
-  color: #fff;
-  padding: 40px 10vw;
-  background: rgba(255,255,255,0.18);
+.login-btn {
+  background-color: #00c2ff;
+  color: white;
+  padding: 8px 15px;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 38px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0095d9;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  text-align: center;
+  z-index: 1000;
 }
 
 .hero-section h1 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  margin-bottom: 16px;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .hero-section p {
-  font-size: 1.35rem;
-  margin-bottom: 26px;
-  color: #eee;
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 25px;
 }
 
 .hero-section button {
-  padding: 13px 36px;
-  background: linear-gradient(to right, #b721ff, #21d4fd);
+  padding: 12px 30px;
+  font-size: 1rem;
   border: none;
-  border-radius: 10px;
+  background-color: #00c2ff;
   color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
+  border-radius: 25px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(183,33,255,0.15);
-  transition: transform 0.18s;
+  transition: background 0.3s;
 }
 
 .hero-section button:hover {
-  transform: scale(1.04);
+  background-color: #0095d9;
 }
 
+/* -------------------- FEATURED LISTINGS -------------------- */
 .featured-listings {
-  width: 94vw;
-  max-width: 1180px;
-  margin: 38px auto 0 auto;
-  color: #fff;
-  padding-bottom: 35px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
 .featured-listings h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  text-align: left;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: #ffffff;
 }
 
 .listing-cards {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
 .listing-card {
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
+  background: white;
+  border-radius: 10px;
   overflow: hidden;
-  width: 308px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.16);
-  transition: transform 0.22s;
-  margin-bottom: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .listing-card:hover {
-  transform: translateY(-5px) scale(1.03);
+  transform: translateY(-5px);
 }
 
 .listing-card img {
   width: 100%;
-  height: 168px;
+  height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid rgba(255,255,255,0.19);
 }
 
 .listing-info {
-  padding: 18px 15px;
-  color: #fff;
+  padding: 15px;
 }
 
 .listing-info h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 .listing-info p {
-  font-size: 1rem;
-  opacity: 0.84;
-  margin-bottom: 7px;
+  color: #777;
+  margin-bottom: 10px;
 }
 
-.listing-info .price {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fa71cd;
+.price {
+  font-weight: bold;
+  color: #00c2ff;
 }
 
+/* -------------------- FOOTER -------------------- */
 .home-footer {
-  margin-top: auto;
-  background: rgba(0,0,0,0.13);
-  color: #fff;
   text-align: center;
-  padding: 20px 0;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  border-radius: 12px 12px 0 0;
-  box-shadow: 0 -2px 20px rgba(0,0,0,0.07);
+  padding: 20px;
+  background-color: #764ba2;
+  font-size: 0.9rem;
+  color: #eee;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+  z-index: 1;
 }
