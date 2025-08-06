@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import sampleImage from '../Image/Rentify.png';
+//import sampleImage from '../Image/Rentify.png';
 
 const listings = [
   {

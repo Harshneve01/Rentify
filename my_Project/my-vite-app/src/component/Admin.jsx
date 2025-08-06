@@ -51,7 +51,7 @@ function Admin() {
   return (
     <div className="admin-bg">
       <aside className="admin-sidebar">
-        <div className="sidebar-logo">StayBnB Admin</div>
+        <div className="sidebar-logo">Rentify Admin</div>
         <nav>
           <a href="#dashboard" className="active">Dashboard</a>
           <a href="#users">Users</a>
