@@ -1,0 +1,191 @@
+/* -------------------- GLOBAL RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #764ba2;
+}
+
+/* -------------------- PAGE WRAPPER -------------------- */
+.home-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* -------------------- HEADER -------------------- */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #764ba2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c2ff;
+}
+
+.login-btn {
+  background-color: #00c2ff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0095d9;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  text-align: center;
+  z-index: 1000;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-section button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: #00c2ff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-section button:hover {
+  background-color: #0095d9;
+}
+
+/* -------------------- FEATURED LISTINGS -------------------- */
+.featured-listings {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.featured-listings h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+
+.listing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.listing-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+}
+
+.listing-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.listing-info {
+  padding: 15px;
+}
+
+.listing-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.listing-info p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #00c2ff;
+}
+
+/* -------------------- FOOTER -------------------- */
+.home-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #764ba2;
+  font-size: 0.9rem;
+  color: #eee;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+  z-index: 1;
+}

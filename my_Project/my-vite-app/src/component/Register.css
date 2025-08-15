@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #c471f5, #fa71cd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.register-container {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.register-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  color: #ccc;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #eee;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #b721ff, #21d4fd);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
