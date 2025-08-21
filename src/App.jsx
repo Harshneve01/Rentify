@@ -1,12 +1,12 @@
 import Login from './Component/Login'
-//import './App.css'
+import AdminDashboard from './Component/Admin/AdminDashboard'
 
 function App() {
  
 
   return (
     <>
-     <Login/>
+     <AdminDashboard/>
     </>
   )
 }
