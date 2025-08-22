@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const Auth = () => {
@@ -13,6 +14,8 @@ const Auth = () => {
     adminKey: "",
   });
 
+   const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -21,10 +24,9 @@ const Auth = () => {
     e.preventDefault();
 
     if (role === "admin") {
-      if (formData.adminKey !== "SECRET123") {
-        alert("❌ Invalid Admin Key!");
-        return;
-      }
+      navigate("/admin-dashboard");
+    }else {
+      navigate("/user-dashboard");
     }
 
     if (isLogin) {
