@@ -1,4 +1,3 @@
-
 .page {
   display: flex;
   justify-content: center;
@@ -35,9 +34,14 @@
   color: #444;
 }
 
+/* ✅ Common style for all inputs, selects, textareas */
 .form-group input[type="text"],
 .form-group input[type="number"],
-.form-group input[type="file"] {
+.form-group input[type="file"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -45,18 +49,23 @@
   font-size: 15px;
   outline: none;
   transition: border 0.3s ease;
+  box-sizing: border-box;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
   border-color: #66a6ff;
 }
 
+/* Special style for file input */
 .form-group input[type="file"] {
   padding: 6px;
   background: #f9f9f9;
   cursor: pointer;
 }
 
+/* Button */
 .btn {
   width: 100%;
   padding: 12px;

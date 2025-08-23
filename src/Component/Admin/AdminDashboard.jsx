@@ -1,6 +1,14 @@
 import "./AdminDashboard.css";
+import { useNavigate } from "react-router-dom";
 
 const AdminDashboard = () => {
+  const navigate = useNavigate();
+  const AddHome = () =>{
+    navigate("/add-home");
+}
+
+
+
   return (
     <div className="dashboard-container">
       
@@ -8,7 +16,7 @@ const AdminDashboard = () => {
         <h2>Admin Panel</h2>
         <ul>
           <li>About</li>
-          <li>Add Houses</li>
+          <li onClick={AddHome}>Add Houses</li>
           <li>View Users</li>
           <li>Settings</li>
           <li>Logout</li>
