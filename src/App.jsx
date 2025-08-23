@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <AddHouse/>
+     <AdminDashboard/>
     </>
   )
 }
