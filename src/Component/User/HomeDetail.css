@@ -1,0 +1,80 @@
+.home-detail-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.home-detail-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.images-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.images-section img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.details-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.details-section h2 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.details-section .city {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.details-section .price {
+  font-size: 20px;
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.details-section .description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.rent-btn {
+  padding: 12px 25px;
+  background-color: #e67e22;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rent-btn:hover {
+  background-color: #d35400;
+}

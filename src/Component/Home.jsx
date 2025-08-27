@@ -13,14 +13,14 @@ const Home = () => {
       title: "Luxury Villa",
       city: "Mumbai",
       price: "₹4000 / night",
-      image: "https://source.unsplash.com/400x300/?villa",
+      image: "/public/Dawning_OptionalPool-Dusk.webp",
     },
     {
       id: 2,
       title: "Modern Apartment",
       city: "Delhi",
       price: "₹2500 / night",
-      image: "https://source.unsplash.com/400x300/?apartment",
+      image: "/public/images.jpeg",
     },
     {
       id: 3,

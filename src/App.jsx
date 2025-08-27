@@ -4,6 +4,7 @@ import Login from "./Component/Login";
 import AdminDashboard from "./Component/Admin/AdminDashboard";
 import AddHouse from "./Component/Admin/AddHouse";
 import Home from "./Component/Home";
+import HomeDetail from "./Component/User/HomeDetail";
 import UserDashboard from "./Component/User/UserDashboard";   // 👈 new import
 // import Bookings from "./Component/User/Bookings";   // 👈 optional
 // import Profile from "./Component/User/Profile";     // 👈 optional
@@ -22,6 +23,7 @@ function App() {
 
         {/* User */}
         <Route path="/user-dashboard" element={< UserDashboard/>} />
+        <Route path="/house/:id" element={<HomeDetail />} />
         {/* <Route path="/bookings" element={<Bookings />} />
         <Route path="/profile" element={<Profile />} /> */}
       </Routes>
