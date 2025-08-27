@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import bgImage from "./Image/Background.jpg"; // ✅ Import your local image
+import bgImage from "./Image/Background.jpg"; 
 
 const Home = () => {
   const navigate = useNavigate();
 
-  // Example houses (dynamic array)
+  
   const houses = [
     {
       id: 1,
@@ -73,14 +73,13 @@ const Home = () => {
 
   const [search, setSearch] = useState("");
 
-  // Filtered list
   const filteredHouses = houses.filter((house) =>
     house.city.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <div className="home-container">
-      {/* Navbar */}
+     
       <nav>
         <h1 onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
           Rentify
@@ -92,10 +91,9 @@ const Home = () => {
         </div>
       </nav>
 
-      {/* Hero */}
       <section
         className="hero"
-        style={{ backgroundImage: `url(${bgImage})` }} // ✅ Set background image
+        style={{ backgroundImage: `url(${bgImage})` }} 
       >
         <div className="hero-overlay">
           <h2>Find your perfect stay</h2>
@@ -108,7 +106,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Houses */}
       <section className="featured">
         <h3>Featured Houses</h3>
 
@@ -134,7 +131,6 @@ const Home = () => {
         )}
       </section>
 
-      {/* Footer */}
       <footer>
         <p>© 2025 Rentify. All rights reserved.</p>
       </footer>
