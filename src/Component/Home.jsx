@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import bgImage from "./Image/Background.jpg"; 
+import bgImage from "./Image/Background1.jpeg"; 
 
 const Home = () => {
   const navigate = useNavigate();
@@ -80,16 +80,6 @@ const Home = () => {
   return (
     <div className="home-container">
      
-      <nav>
-        <h1 onClick={() => navigate("/")} style={{ cursor: "pointer" }}>
-          Rentify
-        </h1>
-        <div>
-          <button onClick={() => navigate("/")}>Home</button>
-          <button onClick={() => navigate("/houses")}>Houses</button>
-          <button onClick={() => navigate("/login")}>Login</button>
-        </div>
-      </nav>
 
       <section
         className="hero"
