@@ -18,6 +18,11 @@ const HomeDetail = () => {
 
   if (!house) return <p>Home not found!</p>;
 
+  const handleRentNow = () => {
+    // Navigate to rent page with house id
+    navigate(`/rent/${house.id}`, { state: { house } });
+  };
+
   return (
     <div className="home-detail-container">
       <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
@@ -37,7 +42,7 @@ const HomeDetail = () => {
           <p className="price">{house.price}</p>
           <p className="description">{house.description}</p>
 
-          <button className="rent-btn" onClick={() => alert("Home booked successfully!")}>
+          <button className="rent-btn" onClick={handleRentNow}>
             Rent Now
           </button>
         </div>
