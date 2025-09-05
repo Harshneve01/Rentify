@@ -3,19 +3,29 @@ import { useNavigate } from "react-router-dom";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
-  const AddHome = () =>{
+
+  // Dummy admin data (later fetch from backend / auth)
+  const admin = {
+    name: "Admin User",
+    email: "admin@yourstay.com",
+    role: "Super Admin",
+  };
+
+  const AddHome = () => {
     navigate("/add-home");
-}
+  };
 
-
+  const About = () => {
+    navigate("/about");
+  };
 
   return (
     <div className="dashboard-container">
-      
+      {/* Sidebar */}
       <aside className="sidebar">
         <h2>Admin Panel</h2>
         <ul>
-          <li>About</li>
+          <li onClick={About}>About</li>
           <li onClick={AddHome}>Add Houses</li>
           <li>View Users</li>
           <li>Settings</li>
@@ -23,8 +33,16 @@ const AdminDashboard = () => {
         </ul>
       </aside>
 
-      
+      {/* Main Content */}
       <main className="main-content">
+        {/* Admin Info */}
+        <div className="admin-info">
+          <h1>Welcome, {admin.name}</h1>
+          <p><strong>Email:</strong> {admin.email}</p>
+          <p><strong>Role:</strong> {admin.role}</p>
+        </div>
+
+        {/* Dashboard Stats */}
         <div className="main-container">
           <div className="box" id="box1">
             3 : Total Number of Houses
@@ -37,7 +55,7 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        
+        {/* Houses Table */}
         <div className="housetb">
           <h2>Houses Table</h2>
           <table>
