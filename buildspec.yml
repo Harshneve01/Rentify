@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing...
+
+  build:
+    commands:
+      - echo Build started
+      - echo Hello Harsh
+
+  post_build:
+    commands:
+      - echo Build completed
+
+artifacts:
+  files:
+    - '**/*'
