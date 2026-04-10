@@ -3,17 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
-      - pip install -r requirements.txt || echo "No requirements file"
+      - echo Installing...
 
   build:
     commands:
-      - echo Build started
-      - python main.py || echo "No app file"
-
-  post_build:
-    commands:
-      - echo Build completed
+      - echo Build phase (nothing to build)
 
 artifacts:
   files:
